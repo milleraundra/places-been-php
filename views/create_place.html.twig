@@ -1,11 +1,12 @@
 <html>
     <head>
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <title>Place You've Been</title>
     </head>
     <body>
         <h1>You added a place!</h1>
             <p>{{ newplace.getCity }}</p>
+            <img src= '{{ newplace.getPhoto}}' >
             <p><a href='/'>Check out your list</a></p>
     </body>
 </html>

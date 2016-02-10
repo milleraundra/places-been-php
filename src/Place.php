@@ -2,10 +2,12 @@
 class Place
 {
     private $city;
+    private $photo;
 
-    function __construct($city_name)
+    function __construct($city_name, $image)
     {
         $this->city = $city_name;
+        $this->photo = $image;
     }
 
     function setCity($city_name)
@@ -16,6 +18,16 @@ class Place
     function getCity()
     {
         return $this->city;
+    }
+
+    function setPhoto($image)
+    {
+        $this->photo = $image;
+    }
+
+    function getPhoto()
+    {
+        return $this->photo;
     }
 
     function save()
